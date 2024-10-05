@@ -119,8 +119,7 @@ async def handle_file(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
 
 
 async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE) -> None:
-    logger.error(f"Exception while handling an update: {
-                 context.error}", exc_info=context.error)
+    logger.error(f"Exception while handling an update: {context.error}", exc_info=context.error)
 
 
 def main() -> None:
